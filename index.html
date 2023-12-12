@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Victor Ferreira de Souza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4d8b9;
+        }
+
+        header {
+            background-color: #5c473d;
+            color: #d8c3b5;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #8a735e;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #d8c3b5;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        nav a:hover {
+            font-weight: bold;
+        }
+
+        section {
+            display: none;
+            padding: 2em;
+            text-align: center;
+            background-color: #b7a593;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #5c473d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #5c473d;
+            color: #d8c3b5;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Victor Ferreira de Souza</h1>
+    </header>
+
+    <nav>
+        <a onclick="mostrarSecao('home')">Home</a>
+        <a onclick="mostrarSecao('sobre')">Sobre Mim</a>
+        <a onclick="mostrarSecao('contato')">Contato</a>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo ao meu portfólio!</h2>
+        <p>Esse site tem o intuito de te informar sobre mim, conhecer um pouco sobre o meu histórico profissional, e assim, podemos realizar um network legal! 😊</p>
+        <p>Meu nome é Victor Ferreira de Souza, e este é o meu espaço para compartilhar meu trabalho e projetos.</p>
+        <p>Fique à vontade para explorar e conhecer um pouco mais sobre mim. Se precisar entrar em contato, confira a aba "Contato".</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>É um prazer estar aqui para me apresentar a vocês. Meu nome é Victor, e sou apaixonado por Recursos Humanos na área de uma das maiores distribuidoras de medicamentos do Brasil, a Profarma. Ao longo dos anos, tenho trabalhado arduamente para contribuir com o sucesso da empresa, garantindo que as engrenagens do setor de recursos humanos estejam sempre bem ajustadas.</p>
+        <p>Atualmente, estou embarcando em uma jornada de aprendizado constante ao estudar para a certificação Microsoft A-900. Essa experiência tem sido desafiadora, porém incrivelmente gratificante, pois me permite aprimorar minhas habilidades e manter-me atualizado com as mais recentes tecnologias no universo da Microsoft.</p>
+        <p>Fora do mundo corporativo, sou um entusiasta de jogos, e meu coração bate mais forte pelos jogos de tiro em primeira pessoa (FPS). A adrenalina, estratégia e competitividade desses jogos são uma fuga bem-vinda do meu dia a dia profissional. Se você compartilha desse interesse ou tem sugestões de jogos incríveis, adoraria ouvir suas recomendações nos comentários!</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>E-mail: <a href="mailto:victor.desouza@sounidesc.com.br">victor.desouza@sounidesc.com.br</a></p>
+        <p>Telefone: (61) 9-83514689</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/victor-ferreira-de-souza-01260a235/" target="_blank">Victor Ferreira de Souza</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Victor Ferreira de Souza</p>
+    </footer>
+
+    <script>
+        function mostrarSecao(secaoId) {
+            document.querySelectorAll('section').forEach(secao => secao.style.display = 'none');
+            document.getElementById(secaoId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
